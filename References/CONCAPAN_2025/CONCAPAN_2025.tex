@@ -1,0 +1,107 @@
+\documentclass{beamer}
+\usepackage[English]{babel}
+\usepackage{graphicx}
+\usepackage{tcolorbox}
+\usepackage{subfig}
+\usepackage{booktabs}
+\usepackage{multirow}
+\usepackage{multicol}
+\usepackage{physymb}
+\usepackage{amsmath}
+\usepackage{setspace}
+
+\hypersetup{colorlinks,linkcolor=blue,urlcolor=blue}
+
+\newcommand{\refsearsa}{Sears y Zemansky, 2013}
+\newcommand{\refsearsb}{adaptada de Sears y Zemansky, 2013}
+\newcommand*\diff{\mathop{}\!\mathrm{d}}
+\newcommand*\Diff[1]{\mathop{}\!\mathrm{d^#1}}
+\newcommand{\citetalk}[1]{ { \tiny { \begin{spacing}{0.75} #1 \end{spacing} } } }
+
+\hypersetup{colorlinks=true,citecolor=blue,linkcolor=blue,urlcolor=blue}
+\usetheme{AnnArbor}
+\usecolortheme{wolverine}
+\setbeamercolor{titlelike}{parent=structure,fg=blue,bg=yellow}
+\useoutertheme{smoothbars}
+\useinnertheme{circles}
+
+\beamertemplatenavigationsymbolsempty
+
+\title[CONCAPAN]{ Espectroscopia óptica y computacional en estudios de la calidad del agua }
+\author[Lic. J. Cuadra]{
+\tiny{
+\underline{J. Cuadra}, M. Ramos, S. de La O, N. Cisneros, O. Deodanes and C. Rudamas
+}
+}
+\institute[UES]{
+\tiny{
+\inst{} Laboratorio de espectroscopia óptica, Escuela de Física, Facultad de Ciencias Naturales y Matemática, Universidad de El Salvador, Central America. 
+\and  
+\href{mailto://jorge.cuadra@ues.edu.sv}{jorge.cuadra@ues.edu.sv} \hspace{0.25cm} , \hspace{0.25cm} \href{mailto://carlos.rudamas@ues.edu.sv}{carlos.rudamas@ues.edu.sv}
+}
+}
+\date{ \tiny{ \today } }
+
+\AtBeginSection{ 
+\begin{frame}
+\frametitle{Contents}
+\tableofcontents[currentsection]
+\end{frame}
+}
+
+\AtBeginSubsection{ 
+\begin{frame}
+\frametitle{Contents}\section{Introduction}
+\tableofcontents[currentsection,currentsubsection]
+\end{frame}
+}
+
+%\pause
+
+%\logo{\includegraphics[scale=0.05]{Figures/Logo_UES.png}}
+
+\begin{document}
+	
+\begin{frame}
+\begin{center}
+Foro: Aplicaciones medioambientales de la computación de alto rendimiento (HPC) y la espectroscopia óptica en Centroamérica
+\end{center}
+\titlepage
+\includegraphics[scale=0.025]{Figures/Logo_UES.png}
+\hspace{9.5cm}
+\includegraphics[scale=0.5]{Figures/Logo_LEO.png}
+\end{frame}
+
+\begin{frame}
+\frametitle{Contenido}
+\tableofcontents
+\end{frame}
+
+\section{Introduction}
+
+
+
+\section{Measurements and Simulations}
+
+\begin{frame}
+\frametitle{Reflectance model - Shallow waters}
+\begin{columns}
+\column{0.5\textwidth}
+\begin{figure}
+\centering
+\includegraphics[scale=0.25]{./Figures/Jensen_2007.png}
+\caption{Diagram of reflected irradiance in a body of water$\dagger$}
+\end{figure}
+\column{0.5\textwidth}
+\begin{eqnarray}
+R_{S} \left( \lambda \right) &=& \rho_{ls} \frac{ L_{S} \left( \lambda \right) }{ E_{d} \left( \lambda \right) } \nonumber \\
+L_{u} \left( \lambda \right) &=& R_{rs} \left( \lambda \right) \times E_{d} \left( \lambda \right) \nonumber
+\end{eqnarray}\end{columns}
+\citetalk{$\dagger$Jensen, J.R. (2007) Remote Sensing of the Environment: An Earth Resource Perspective. 2nd Edition, Pearson Prentice Hall, Upper Saddle River.}
+\end{frame}
+
+\section{Results and Discussion}
+
+\section{Conclutions}
+
+\end{document}
