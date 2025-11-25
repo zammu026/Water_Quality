@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.27 (MiKTeX 25.4) (preloaded format=pdflatex 2025.11.6)  25 NOV 2025 10:40
+This is pdfTeX, Version 3.141592653-2.6-1.40.27 (MiKTeX 25.4) (preloaded format=pdflatex 2025.11.4)  25 NOV 2025 16:08
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -727,7 +727,7 @@ on input line 2058.
 LaTeX Encoding Info:    Ignoring declaration for text command \SS (encoding ?) 
 on input line 2083.
 \U@D=\dimen302
-\l@unhyphenated=\language79
+\l@unhyphenated=\language1
 
 (/home/jcuadra/.miktex/texmfs/install/tex/generic/babel/txtbabel.def)
 \bbl@readstream=\read3
@@ -748,25 +748,10 @@ File: bblopts.cfg 2005/09/08 v0.1 add Arabic and Farsi to "declared" options of
 )
 (/home/jcuadra/.miktex/texmfs/install/tex/generic/babel/locale/en/babel-english
 .tex)
-Package babel Info: Importing font and identification data for English
+Package babel Info: Importing font and identification data for english
 (babel)             from babel-en.ini. Reported on input line 4295.
  (/home/jcuadra/.miktex/texmfs/install/tex/latex/babel-english/english.ldf
 Language: english 2017/06/06 v3.3r English support from the babel system
-Package babel Info: Hyphen rules for 'canadian' set to \l@english
-(babel)             (\language0). Reported on input line 102.
-Package babel Info: Hyphen rules for 'australian' set to \l@ukenglish
-(babel)             (\language73). Reported on input line 105.
-Package babel Info: Hyphen rules for 'newzealand' set to \l@ukenglish
-(babel)             (\language73). Reported on input line 108.
-! Missing number, treated as zero.
-<to be read again> 
-                   \l@English 
-l.191 \ldf@finish\CurrentOption
-                               
-A number should have been here; I inserted `0'.
-(If you can't figure out why I needed to see a number,
-look up `weird error' in the index to The TeXbook.)
-
 )) (/home/jcuadra/.miktex/texmfs/install/tex/latex/tcolorbox/tcolorbox.sty
 Package: tcolorbox 2025/09/09 version 6.8.0 text color boxes
 
@@ -1029,13 +1014,14 @@ Package: setspace 2022/12/04 v6.7b set line spacing
 Package hyperref Info: Option `colorlinks' set `true' on input line 13.
 Package hyperref Info: Option `colorlinks' set `true' on input line 21.
 
-(/home/jcuadra/.miktex/texmfs/install/tex/latex/beamer/beamerthemeAnnArbor.sty
+(/home/jcuadra/.miktex/texmfs/install/tex/latex/beamer/beamerthemeCambridgeUS.s
+ty
 (/home/jcuadra/.miktex/texmfs/install/tex/latex/beamer/beamerinnerthemerounded.
 sty)
 (/home/jcuadra/.miktex/texmfs/install/tex/latex/beamer/beamerouterthemeinfoline
 s.sty)
-(/home/jcuadra/.miktex/texmfs/install/tex/latex/beamer/beamercolorthemewolverin
-e.sty))
+(/home/jcuadra/.miktex/texmfs/install/tex/latex/beamer/beamercolorthemebeaver.s
+ty))
 (/home/jcuadra/.miktex/texmfs/install/tex/latex/beamer/beamerouterthemesmoothba
 rs.sty)
 (/home/jcuadra/.miktex/texmfs/install/tex/latex/beamer/beamerinnerthemecircles.
@@ -1064,15 +1050,12 @@ Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                removing `math shift' on input line 35.
 
-(/home/jcuadra/.miktex/texmfs/install/tex/latex/l3backend/l3backend-pdftex.def
+
+(/home/jcuadra/.miktex/texmfs/install/tex/latex/l3backend-dev/l3backend-pdftex.
+def
 File: l3backend-pdftex.def 2025-10-09 L3 backend support: PDF output (pdfTeX)
 \l__color_backend_stack_int=\count399
-) (CONCAPAN_2025.aux
-(/home/jcuadra/.miktex/texmfs/install/tex/generic/babel/locale/en/babel-english
-.tex)
-Package babel Info: Importing data for english
-(babel)             from babel-en.ini. Reported on input line 7.
-)
+) (CONCAPAN_2025.aux)
 \openout1 = `CONCAPAN_2025.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 63.
@@ -1257,12 +1240,12 @@ fd
 File: ot1mathkerncmss.fd 2020/01/31 Fontinst v1.933 font definitions for OT1/ma
 thkerncmss.
 )
-<Figures/Logo_UES.png, id=72, 831.85782pt x 1037.37563pt>
+<Figures/Logo_UES.png, id=92, 831.85782pt x 1037.37563pt>
 File: Figures/Logo_UES.png Graphic file (type png)
 <use Figures/Logo_UES.png>
 Package pdftex.def Info: Figures/Logo_UES.png  used on input line 73.
 (pdftex.def)             Requested size: 20.7913pt x 25.928pt.
-<Figures/Logo_LEO.png, id=74, 72.5109pt x 40.2303pt>
+<Figures/Logo_LEO.png, id=94, 72.5109pt x 40.2303pt>
 File: Figures/Logo_LEO.png Graphic file (type png)
 <use Figures/Logo_LEO.png>
 Package pdftex.def Info: Figures/Logo_LEO.png  used on input line 73.
@@ -1283,27 +1266,141 @@ Overfull \vbox (2.03917pt too high) detected at line 73
 
 [3
 
-] (CONCAPAN_2025.toc)
+]
+<./Figures/ONU_Goals.png, id=257, 255.95625pt x 197.73875pt>
+File: ./Figures/ONU_Goals.png Graphic file (type png)
+<use ./Figures/ONU_Goals.png>
+Package pdftex.def Info: ./Figures/ONU_Goals.png  used on input line 102.
+(pdftex.def)             Requested size: 191.9667pt x 148.3037pt.
+
 
 [4
 
-]
-<./Figures/Jensen_2007.png, id=195, 540.51938pt x 573.64313pt>
-File: ./Figures/Jensen_2007.png Graphic file (type png)
-<use ./Figures/Jensen_2007.png>
-Package pdftex.def Info: ./Figures/Jensen_2007.png  used on input line 101.
-(pdftex.def)             Requested size: 135.1295pt x 143.41043pt.
-
+ <./Figures/ONU_Goals.png>] (CONCAPAN_2025.toc)
 
 [5
 
- <./Figures/Jensen_2007.png>] (CONCAPAN_2025.toc)
+]
+<./Figures/Measurement_Place2.png, id=357, 787.44188pt x 636.12656pt>
+File: ./Figures/Measurement_Place2.png Graphic file (type png)
+<use ./Figures/Measurement_Place2.png>
+Package pdftex.def Info: ./Figures/Measurement_Place2.png  used on input line 1
+15.
+(pdftex.def)             Requested size: 157.48558pt x 127.22305pt.
+<./Figures/Measurement_Place1.png, id=358, 670.75594pt x 636.12656pt>
+File: ./Figures/Measurement_Place1.png Graphic file (type png)
+<use ./Figures/Measurement_Place1.png>
+Package pdftex.def Info: ./Figures/Measurement_Place1.png  used on input line 1
+15.
+(pdftex.def)             Requested size: 134.1488pt x 127.22305pt.
+
 
 [6
 
-] (CONCAPAN_2025.toc)
+ <./Figures/Measurement_Place2.png> <./Figures/Measurement_Place1.png>]
+<./Figures/Setup_Conventional.jpeg, id=406, 455.7025pt x 324.21124pt>
+File: ./Figures/Setup_Conventional.jpeg Graphic file (type jpg)
+<use ./Figures/Setup_Conventional.jpeg>
+Package pdftex.def Info: ./Figures/Setup_Conventional.jpeg  used on input line 
+135.
+(pdftex.def)             Requested size: 136.71179pt x 97.26411pt.
+<./Figures/R_Conventional.jpeg, id=407, 1606.0pt x 903.375pt>
+File: ./Figures/R_Conventional.jpeg Graphic file (type jpg)
+<use ./Figures/R_Conventional.jpeg>
+Package pdftex.def Info: ./Figures/R_Conventional.jpeg  used on input line 135.
+
+(pdftex.def)             Requested size: 160.6094pt x 90.34279pt.
+
 
 [7
+
+ <./Figures/Setup_Conventional.jpeg> <./Figures/R_Conventional.jpeg>]
+<./Figures/MAiZDOAS_Setup.jpeg, id=453, 514.92375pt x 357.335pt>
+File: ./Figures/MAiZDOAS_Setup.jpeg Graphic file (type jpg)
+<use ./Figures/MAiZDOAS_Setup.jpeg>
+Package pdftex.def Info: ./Figures/MAiZDOAS_Setup.jpeg  used on input line 155.
+
+(pdftex.def)             Requested size: 180.226pt x 125.06912pt.
+
+Overfull \hbox (9.07835pt too wide) in paragraph at lines 155--155
+ [] 
+ []
+
+<./Figures/MAiZDOAS_WQ2.jpeg, id=454, 1606.0pt x 1204.5pt>
+File: ./Figures/MAiZDOAS_WQ2.jpeg Graphic file (type jpg)
+<use ./Figures/MAiZDOAS_WQ2.jpeg>
+Package pdftex.def Info: ./Figures/MAiZDOAS_WQ2.jpeg  used on input line 155.
+(pdftex.def)             Requested size: 160.6094pt x 120.45705pt.
+
+
+[8
+
+ <./Figures/MAiZDOAS_Setup.jpeg> <./Figures/MAiZDOAS_WQ2.jpeg>]
+<./Figures/Jensen_2007.png, id=499, 540.51938pt x 573.64313pt>
+File: ./Figures/Jensen_2007.png Graphic file (type png)
+<use ./Figures/Jensen_2007.png>
+Package pdftex.def Info: ./Figures/Jensen_2007.png  used on input line 174.
+(pdftex.def)             Requested size: 135.1295pt x 143.41043pt.
+
+
+[9
+
+ <./Figures/Jensen_2007.png>]
+File: ./Figures/Jensen_2007.png Graphic file (type png)
+<use ./Figures/Jensen_2007.png>
+Package pdftex.def Info: ./Figures/Jensen_2007.png  used on input line 199.
+(pdftex.def)             Requested size: 135.1295pt x 143.41043pt.
+
+
+[10
+
+]
+
+[11
+
+] (CONCAPAN_2025.toc)
+
+[12
+
+]
+<./Figures/Simu_2.jpeg, id=686, 1065.9825pt x 672.5125pt>
+File: ./Figures/Simu_2.jpeg Graphic file (type jpg)
+<use ./Figures/Simu_2.jpeg>
+Package pdftex.def Info: ./Figures/Simu_2.jpeg  used on input line 227.
+(pdftex.def)             Requested size: 319.79721pt x 201.7553pt.
+
+Overfull \vbox (27.06598pt too high) detected at line 227
+ []
+
+
+
+[13
+
+ <./Figures/Simu_2.jpeg>]
+<./Figures/Simu_1.jpeg, id=732, 1078.0275pt x 686.565pt>
+File: ./Figures/Simu_1.jpeg Graphic file (type jpg)
+<use ./Figures/Simu_1.jpeg>
+Package pdftex.def Info: ./Figures/Simu_1.jpeg  used on input line 236.
+(pdftex.def)             Requested size: 323.41075pt x 205.97108pt.
+
+Overfull \vbox (31.28177pt too high) detected at line 236
+ []
+
+
+
+[14
+
+ <./Figures/Simu_1.jpeg>] (CONCAPAN_2025.toc)
+
+[15
+
+]
+
+[16
+
+]
+
+[17
 
 ]
 \tf@nav=\write6
@@ -1321,17 +1418,20 @@ LaTeX2e <2025-06-01> patch level 1
 L3 programming layer <2025-10-09>
  ***********
 Package rerunfilecheck Info: File `CONCAPAN_2025.out' has not changed.
-(rerunfilecheck)             Checksum: C3B03F78ABAF89864FFA0BA47B877B2E;549.
+(rerunfilecheck)             Checksum: AAE8F01368F7198C45A9126046F07584;660.
  ) 
 Here is how much of TeX's memory you used:
- 30401 strings out of 468081
- 616169 string characters out of 5429682
- 1004760 words of memory out of 5000000
- 58471 multiletter control sequences out of 15000+600000
- 638265 words of font info for 78 fonts, out of 8000000 for 9000
- 1141 hyphenation exceptions out of 8191
- 128i,20n,123p,417b,793s stack positions out of 10000i,1000n,20000p,200000b,200000s
-</home/jcuadra/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmmi10.p
+ 30395 strings out of 470017
+ 616807 string characters out of 5477622
+ 996637 words of memory out of 5000000
+ 58203 multiletter control sequences out of 15000+600000
+ 638865 words of font info for 80 fonts, out of 8000000 for 9000
+ 0 hyphenation exceptions out of 8191
+ 128i,20n,123p,417b,800s stack positions out of 10000i,1000n,20000p,200000b,200000s
+</home/jcuadra/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmex10.p
+fb></home/jcuadra/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmmi10.
+pfb></home/jcuadra/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmmi8.
+pfb></home/jcuadra/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmr8.p
 fb></home/jcuadra/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmss10.
 pfb></home/jcuadra/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmss12
 .pfb></home/jcuadra/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmss8
@@ -1339,10 +1439,14 @@ pfb></home/jcuadra/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmss12
 10.pfb></home/jcuadra/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cms
 si8.pfb></home/jcuadra/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cm
 sy10.pfb></home/jcuadra/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/c
-msy6.pfb>
-Output written on CONCAPAN_2025.pdf (7 pages, 1352353 bytes).
+msy6.pfb></home/jcuadra/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/c
+msy7.pfb></home/jcuadra/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/c
+msy8.pfb></home/jcuadra/.miktex/texmfs/install/fonts/type1/public/amsfonts/symb
+ols/msam10.pfb></home/jcuadra/.miktex/texmfs/install/fonts/type1/public/amsfont
+s/symbols/msam7.pfb>
+Output written on CONCAPAN_2025.pdf (17 pages, 2870361 bytes).
 PDF statistics:
- 314 PDF objects out of 1000 (max. 8388607)
- 19 named destinations out of 1000 (max. 500000)
- 156 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 967 PDF objects out of 1000 (max. 8388607)
+ 39 named destinations out of 1000 (max. 500000)
+ 201 words of extra memory for PDF output out of 10000 (max. 10000000)
 
