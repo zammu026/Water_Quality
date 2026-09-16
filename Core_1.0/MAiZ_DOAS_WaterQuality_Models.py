@@ -106,7 +106,7 @@ def Model_JumanjiWolo(wav,prmtrs):
 
 def WaterQuality_Fit(plt_obj,rf_wav,rf_mea,rf_sim):
     aw=raw.interpolate_data(rf_wav,ipm.WQ_AW,'lambda_nm','a_water_m-1')
-    input("Start fit?")
+    #input("Start fit?")
     plbl=None
     par_tot=0
     if ipm.WQ_Model=="PeterGege":
