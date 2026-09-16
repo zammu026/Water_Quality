@@ -60,15 +60,17 @@ def calcular_reflectancia():
     #filtered = signal.sosfilt(sos, reflectancia)
     return wl,rflc,I_ref
 
-def medidas_reflectancia():
-    path= "/mnt/PS/PS_Proyectos/2025_MAiZ_DOAS_Water_Quality/MAiZ_Measurements_2025_10_25/Data_Spectrum_Intensities/MEDIDASLAGO/MEDIDA6.txt"
+# Cambia la definición de la función y elimina la variable 'path' interna:
+def medidas_reflectancia(path_archivo):
     def load_table(path):
-        df = pd.read_csv(path,sep="\t", header=16, encoding='latin1',dtype={'column_a': float, 'column_b': float})
+        df = pd.read_csv(path, sep="\t", header=16, encoding='latin1', dtype={'column_a': float, 'column_b': float})
         wl = df.iloc[:,0].values
         val = df.iloc[:, 1].values
-        return wl,val
-    wl,rflc=load_table(path)
+        return wl, val
+        
+    wl, rflc = load_table(path_archivo) # Usa el parámetro de la función
     n,m,k=0,0,0
+    
     for pix in range(len(wl)):
         if wl[pix]>ipm.wav_sta:
             n=pix
