@@ -8,9 +8,9 @@ from scipy import signal
 
 def calcular_reflectancia(ruta_medida, ruta_referencia, ruta_offset):
     def datas(ruta_archivo):
-        datos = np.loadtxt(ruta_archivo, skiprows=4)
-        return datos[:, 0], datos[:, 1]
-
+        df = pd.read_csv(ruta_archivo, sep=r'\t|\s+', skiprows=17, skipfooter=1, engine='python', header=None)
+        return df.iloc[:, 0].values, df.iloc[:, 1].values
+    
     wl, I = datas(ruta_medida)
     refwl, refI = datas(ruta_referencia)
     offsetwl, offsetI = datas(ruta_offset)
