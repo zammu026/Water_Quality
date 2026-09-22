@@ -6,29 +6,39 @@ import pandas as pd
 from scipy.interpolate import interp1d
 from scipy import signal
 
-def calcular_reflectancia():
+def calcular_reflectancia(ruta_medida, ruta_referencia, ruta_offset):
     def datas(ruta_archivo):
         datos = np.loadtxt(ruta_archivo, skiprows=4)
         return datos[:, 0], datos[:, 1]
-    wl, I = datas(ipm.WQ_Measurement)
-    refwl, refI = datas(ipm.WQ_Refence)
-    offsetwl, offsetI = datas(ipm.WQ_Offset)
-    #n,m=0,len(wl)
-    #"""
-    n,m,k=0,0,0
+
+    wl, I = datas(ruta_medida)
+    refwl, refI = datas(ruta_referencia)
+    offsetwl, offsetI = datas(ruta_offset)
+
+    n, m, k = 0, 0, 0
     for pix in range(len(wl)):
-        if wl[pix]>ipm.wav_sta:
-            n=pix
+        if wl[pix] > ipm.wav_sta:
+            n = pix
             break
-    for pix in range(n,len(wl)):
-        if wl[pix]>ipm.wav_end:
-            m=pix
+    for pix in range(n, len(wl)):
+        if wl[pix] > ipm.wav_end:
+            m = pix
             break
-        k+=1
-    print(n,m)
+        k += 1
+
     wl = wl[n:m]
-    ipm.wav_val=wl
-    ipm.pix=len(wl)
+    ipm.wav_val = wl
+    ipm.pix = len(wl)
+
+    # Filtrado Savitzky-Golay tal como estaba en tu código original
+    I_oft = signal.savgol_filter(offsetI[n:m], window_length=30, polyorder=3)
+    I_ref = signal.savgol_filter(refI[n:m], window_length=30, polyorder=3)
+    I_mea = signal.savgol_filter(I[n:m], window_length=30, polyorder=3)
+    
+    rflc = I_mea / I_ref
+    rflc = 10 * rflc / np.max(rflc)
+
+    return wl, rflc, I_ref
     """
     reflectancia = (I[n:m] - offsetI[n:m]) / (refI[n:m] - offsetI[n:m])
     print(reflectancia.shape)
